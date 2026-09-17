@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matthew Brace | Kushmanmb — Blockchain Engineer</title>
+  <meta name="description" content="Blockchain Software Engineer specializing in Bitcoin, Ethereum, smart contracts, DeFi, wallets, and zero-knowledge proofs.">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #121826;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #3b82f6;
+      --accent2: #8b5cf6;
+      --border: #1e293b;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(11, 15, 25, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-weight: 700; font-size: 1.25rem; letter-spacing: -0.02em; }
+    nav a {
+      color: var(--muted);
+      margin-left: 1.75rem;
+      font-size: 0.95rem;
+    }
+    nav a:hover { color: white; }
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 5rem 2rem 4rem;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+    }
+    .hero .tagline {
+      font-size: 1.25rem;
+      color: var(--muted);
+      max-width: 640px;
+      margin-bottom: 1.5rem;
+    }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 2rem;
+    }
+    .badge {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+    .cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      background: var(--accent);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #2563eb;
+      text-decoration: none;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+      transition: 0.2s;
+    }
+    .card:hover {
+      border-color: #334155;
+      transform: translateY(-2px);
+    }
+    .card h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    .project-card { border-left: 4px solid var(--accent2); }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+    .skill {
+      background: #1e293b;
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      header { padding: 1rem; }
+      nav a { margin-left: 1rem; font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Kushmanmb</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Matthew Brace<br>
+      <span style="color: var(--accent)">Blockchain Software Engineer</span>
+    </h1>
+    <p class="tagline">
+      Blockchain Software Engineer specializing in Bitcoin, Ethereum, smart contracts, DeFi, wallets, and zero-knowledge proofs.
+    </p>
+    <div class="badges">
+      <span class="badge">Bitcoin</span>
+      <span class="badge">Ethereum</span>
+      <span class="badge">Smart Contracts</span>
+      <span class="badge">ZK Proofs</span>
+      <span class="badge">DeFi</span>
+      <span class="badge">Security</span>
+    </div>
+    <div class="cta">
+      <a href="https://github.com/Kushmanmb" class="btn" target="_blank" rel="noopener noreferrer" aria-label="View GitHub (opens in a new tab)">View GitHub</a>
+      <a href="https://x.com/kushmannmb" class="btn btn-outline" target="_blank" rel="noopener noreferrer" aria-label="Follow on X (opens in a new tab)">Follow on X</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p style="max-width: 720px; color: var(--muted); font-size: 1.1rem;">
+      Software engineer specializing in blockchain technology with deep expertise in
+      smart contract development, DeFi applications, wallet architecture, and security.
+      Focused on advancing Bitcoin and Ethereum protocols and building robust,
+      privacy-preserving systems.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Project</h2>
+    <div class="card project-card">
+      <h3>Proving PDFs in ZKP</h3>
+      <p style="margin: 0.75rem 0 1.25rem;">
+        Tools for verifying PDF documents inside zero-knowledge proof systems.
+        Prove that a PDF is signed by a trusted authority or that specific text
+        appears on a page — without revealing the entire document.
+      </p>
+      <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--muted);">
+        <strong>Stack:</strong> Rust · SP1 · Solidity · React · WebAssembly
+      </p>
+      <a href="https://github.com/Kushmanmb/kushmanmb" class="btn" target="_blank" rel="noopener noreferrer" aria-label="View Repository (opens in a new tab)">
+        View Repository →
+      </a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Expertise</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Blockchain &amp; Smart Contracts</h3>
+        <div class="skills">
+          <span class="skill">Solidity</span>
+          <span class="skill">Rust</span>
+          <span class="skill">Vyper</span>
+          <span class="skill">EVM</span>
+          <span class="skill">Bitcoin Script</span>
+          <span class="skill">UTXO</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>ZK &amp; Privacy</h3>
+        <div class="skills">
+          <span class="skill">SP1</span>
+          <span class="skill">Circom</span>
+          <span class="skill">Noir</span>
+          <span class="skill">ZK Circuits</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Tools &amp; Frameworks</h3>
+        <div class="skills">
+          <span class="skill">Hardhat</span>
+          <span class="skill">Foundry</span>
+          <span class="skill">OpenZeppelin</span>
+          <span class="skill">Slither</span>
+          <span class="skill">TypeScript</span>
+          <span class="skill">Go</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Let’s Connect</h2>
+    <p style="color: var(--muted); max-width: 600px; margin-bottom: 1.5rem;">
+      Open to collaboration on open-source blockchain projects, security audits,
+      protocol improvements, and the next generation of DeFi applications.
+    </p>
+    <div class="cta">
+      <a href="https://github.com/Kushmanmb" class="btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)">GitHub</a>
+      <a href="https://x.com/kushmannmb" class="btn btn-outline" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter profile (opens in a new tab)">X / Twitter</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Matthew Brace (@Kushmanmb). Built for the decentralized future.</p>
+  </footer>
+</body>
+</html>
