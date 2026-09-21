@@ -107,6 +107,12 @@
       margin: 0 auto;
       padding: 3.5rem 2rem;
     }
+    .section-intro {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 1.75rem;
+    }
     h2 {
       font-size: 1.75rem;
       margin-bottom: 1.5rem;
@@ -131,6 +137,22 @@
     .card h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
     .card p { color: var(--muted); font-size: 0.95rem; }
     .project-card { border-left: 4px solid var(--accent2); }
+    .manifesto-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+    .manifesto-card {
+      height: 100%;
+    }
+    .manifesto-card h3 {
+      margin-bottom: 0.75rem;
+    }
+    .manifesto-closing {
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+      border-left: 4px solid var(--accent);
+    }
     .skills {
       display: flex;
       flex-wrap: wrap;
@@ -161,6 +183,7 @@
     <div class="logo">Kushmanmb</div>
     <nav>
       <a href="#about">About</a>
+      <a href="#manifesto">Manifesto</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -183,6 +206,7 @@
       <span class="badge">Security</span>
     </div>
     <div class="cta">
+      <a href="#manifesto" class="btn btn-outline" aria-label="Read the engineering manifesto">Read Manifesto</a>
       <a href="https://github.com/Kushmanmb" class="btn" target="_blank" rel="noopener noreferrer" aria-label="View GitHub (opens in a new tab)">View GitHub</a>
       <a href="https://x.com/kushmannmb" class="btn btn-outline" target="_blank" rel="noopener noreferrer" aria-label="Follow on X (opens in a new tab)">Follow on X</a>
     </div>
@@ -190,12 +214,98 @@
 
   <section id="about">
     <h2>About</h2>
-    <p style="max-width: 720px; color: var(--muted); font-size: 1.1rem;">
+    <p class="section-intro" style="font-size: 1.1rem;">
       Software engineer specializing in blockchain technology with deep expertise in
       smart contract development, DeFi applications, wallet architecture, and security.
       Focused on advancing Bitcoin and Ethereum protocols and building robust,
       privacy-preserving systems.
     </p>
+  </section>
+
+  <section id="manifesto" aria-labelledby="manifesto-title">
+    <h2 id="manifesto-title">Engineering Manifesto</h2>
+    <p class="section-intro">
+      I build for open networks that outlast cycles of hype. My work across Bitcoin,
+      Ethereum, DeFi, and zero-knowledge systems is grounded in shipping software that
+      increases user agency, withstands adversarial environments, and earns trust
+      through verifiability.
+    </p>
+    <div class="manifesto-grid">
+      <article class="card manifesto-card">
+        <h3>Open Protocols Win</h3>
+        <p>
+          The most durable systems are composable, inspectable, and not captive to a
+          single operator. I favor designs that strengthen open standards, minimize
+          coordination bottlenecks, and let developers build without asking for
+          permission.
+        </p>
+      </article>
+      <article class="card manifesto-card">
+        <h3>User Sovereignty First</h3>
+        <p>
+          Wallets, smart contracts, and infrastructure should give users clear control
+          over their assets, keys, and exit paths. Good blockchain engineering reduces
+          dependence on trusted intermediaries instead of merely relocating it.
+        </p>
+      </article>
+      <article class="card manifesto-card">
+        <h3>Security Over Hype</h3>
+        <p>
+          Novelty is cheap; resilient systems are not. I prioritize rigorous threat
+          modeling, conservative contract assumptions, and operational discipline over
+          shipping features that attract attention but expand risk.
+        </p>
+      </article>
+      <article class="card manifesto-card">
+        <h3>Verifiability Matters</h3>
+        <p>
+          Systems handling value and coordination should be observable and auditable.
+          From testable smart contracts to zero-knowledge workflows, I aim for proofs,
+          invariants, and transparent behavior instead of opaque trust claims.
+        </p>
+      </article>
+      <article class="card manifesto-card">
+        <h3>Privacy Is Core Infrastructure</h3>
+        <p>
+          Privacy is not a luxury feature. It protects users from coercion, preserves
+          optionality, and makes open systems safer to participate in. Zero-knowledge
+          proofs are powerful when they reduce disclosure without weakening assurance.
+        </p>
+      </article>
+      <article class="card manifesto-card">
+        <h3>Responsible Engineering</h3>
+        <p>
+          Blockchain software must account for irreversible failures, adversarial
+          incentives, and real financial consequences. I value clear interfaces,
+          defensive defaults, incremental rollout, and documentation that supports
+          maintainers as much as end users.
+        </p>
+      </article>
+      <article class="card manifesto-card">
+        <h3>Interoperability Compounds Value</h3>
+        <p>
+          Bitcoin, Ethereum, and application-layer protocols should not evolve in
+          silos. I care about bridges between ecosystems where the trust assumptions
+          are explicit, the interfaces are stable, and the integration meaningfully
+          expands what users can verify and do.
+        </p>
+      </article>
+      <article class="card manifesto-card">
+        <h3>Build for the Long Term</h3>
+        <p>
+          The best work creates public-good infrastructure that remains useful when
+          markets cool down. I want the systems I ship to contribute to a more open,
+          secure, and globally accessible financial internet over the long run.
+        </p>
+      </article>
+    </div>
+    <div class="card manifesto-closing">
+      <p>
+        This portfolio is a record of that direction: practical protocol work,
+        security-minded product engineering, and privacy-preserving systems that make
+        decentralized technology more trustworthy and more useful.
+      </p>
+    </div>
   </section>
 
   <section id="projects">
